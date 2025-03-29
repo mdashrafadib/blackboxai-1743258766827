@@ -1,0 +1,27 @@
+{
+  "name": "velox-drive",
+  "version": "1.0.0",
+  "description": "A secure file-sharing drive Android app",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "build:cordova": "npm run build && node scripts/copy-to-cordova.js && cd cordova && cordova build android",
+    "postinstall": "cd frontend && npm install",
+    "setup": "node scripts/setup.js"
+  },
+  "keywords": [
+    "file-sharing",
+    "secure",
+    "android",
+    "cordova",
+    "react"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "fs-extra": "^10.1.0",
+    "concurrently": "^7.6.0"
+  }
+}
